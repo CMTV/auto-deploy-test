@@ -1,6 +1,7 @@
 language: node_js
-branches:
-  only:
-  - master
-before_install:
-- npm install gulp
+node_js:
+  - "iojs"
+  - "7"
+before_script:
+  - npm install -g gulp
+script: gulp
